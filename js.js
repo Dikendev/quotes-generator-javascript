@@ -24,9 +24,16 @@ const quotes = [{
 }, {
     quote:`“The wisest mind has something yet to learn.”`,
     person:` George Santayana (1863 - 1952)`
-},
+},];
+
+btn.addEventListener
 
 
+btn.addEventListener('click', function() {
 
+    let random = Math.floor(Math.random() * quotes.length);
 
-]
+    quote.innerText = quotes[random].quote
+    person.innerText = quotes[random].person
+
+})
